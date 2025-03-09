@@ -5,11 +5,11 @@ This project explores how sleep duration and quality impact academic performance
 
 ## Motivation
 
-**Personal Growth**
+- **Personal Growth**
 
 Sleep is an essential part of overall well-being. By understanding how my sleep patterns influence my academic perforamnce, I can develop healthier and more efficient habits to improve my efficiency in studying.
 
-**Long-Term Impact**
+- **Long-Term Impact**
 
 The findings of this project will not only help me enhance my academic performance, but they also contribute to developing better sleep habits for increased productivity, focus, and mental and physical well-being. 
 
