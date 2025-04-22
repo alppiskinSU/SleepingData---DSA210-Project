@@ -21,7 +21,8 @@ The findings of this project will not only help me enhance my academic performan
 ## Data Sources
 To conduct this analysis, data will be collected through the following sources:
 
-- **Sleep Data:** Self-Rated Sleep Duration and Sleep Time.
+- **Sleep Duration:** Total sleep duration (hours).
+- **Sleep Quality:** Self-rated sleep quality (scale of 1-10).
 - **Study Time:** Tracked manually with using chronometer.
 - **Study Quality:** Self-rated study quality ( scale of 1-10).
 - **Academic Performance:** Grades from the midterm exams. ( This may vary due to difficulty of lesson but in previous semesters sleep affected my exam grades significantly )
