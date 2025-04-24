@@ -14,7 +14,7 @@ from scipy.stats import pearsonr
 import statsmodels.api as sm
 
 # 1. Load Data
-file_path = "Sleep_Study.xlsx"
+file_path = "2 - Sleep_Study_Data.xlsx"
 data = pd.read_excel(file_path)
 
 # 2. Rename columns
