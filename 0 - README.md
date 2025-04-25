@@ -49,21 +49,21 @@ The heatmap below visualizes the correlation between four key variables: Sleep D
 - **SleepHours** and **SleepQuality** are highly correlated (0.84), suggesting that longer sleep often coincides with better self-reported quality.
 - **StudyHours** shows a weak negative correlation with sleep-related metrics but has a moderate positive correlation with **StudyQuality** (0.36).
 
-![Correlation Matrix](Correlation Matrix.png)
+![Correlation Matrix](Correlation%20Matrix.png)
 
 ---
 
 ### 2. Distribution of Sleep Hours
 The histogram below shows that the most common sleep duration falls between 7.5 and 9 hours. The distribution is slightly right-skewed, indicating that most days have adequate sleep duration, with a few nights of significantly shorter or longer sleep.
 
-![Sleep Duration Histogram](Sleep Duration - Histogram.png)
+![Sleep Duration Histogram](Sleep%20Duration%20-%20Histogram.png)
 
 ---
 
 ### 3. Distribution of Study Hours
 Study durations tend to cluster between 3 to 6 hours, with a notable peak around 4 hours. The KDE curve suggests a relatively normal distribution, but with a slight tail toward higher study durations.
 
-![Study Duration Histogram](Study Duration - Histogram.png)
+![Study Duration Histogram](Study%20Duration%20-%20Histogram.png)
 
 ---
 
@@ -73,7 +73,7 @@ This scatter plot visualizes the relationship between sleep duration and study h
 - There is no strong visible linear relationship.
 - Some high study durations occur at both high and low sleep durations, indicating other factors may influence study habits.
 
-![Scatter: Sleep vs Study Hours](Study Duration - Sleep Duration.png)
+![Scatter: Sleep vs Study Hours](Study%20Duration%20-%20Sleep%20Duration.png)
 
 ---
 
@@ -83,14 +83,14 @@ The box plot groups study hours based on rounded sleep quality scores (1-10). Me
 - Highest variance in study hours is observed around mid-to-high sleep quality.
 - Lower sleep quality sometimes still resulted in relatively high study hours.
 
-![Boxplot: Sleep Quality vs Study Hours](Study Duration - Sleep Quality.png)
+![Boxplot: Sleep Quality vs Study Hours](Study%20Duration%20-%20Sleep%20Quality.png)
 
 ---
 
 ### 6. Sleep Quality vs Study Quality (Scatter Plot)
 This scatter plot explores the connection between self-reported sleep quality and study quality. Although no strong linear relationship is evident, clusters of high sleep quality generally align with high study quality.
 
-![Scatter: Sleep Quality vs Study Quality](Study Quality - Sleep Quality.png)
+![Scatter: Sleep Quality vs Study Quality](Study%20Quality%20-%20Sleep%20Quality.png)
 
 ---
 
@@ -100,7 +100,7 @@ The time series graph illustrates trends in sleep and study habits across severa
 - Sleep hours are more stable over time, while study hours fluctuate dramatically.
 - Some days with very little study time coincide with consistent sleep hours, potentially indicating low motivation or outside obligations.
 
-![Time Series: Sleep & Study Over Time](Study & Sleep Hours over Time.png)
+![Time Series: Sleep & Study Over Time](Study%20&%20Sleep%20Hours%20over%20Time.png)
 
 ---
 
