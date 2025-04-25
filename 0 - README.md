@@ -164,15 +164,3 @@ To examine this relationship, a **Pearson correlation test** was conducted betwe
 
 ---
 
-### 9. Regression Summary (Sleep Hours → Study Hours)
-An OLS regression to evaluate if sleep hours predict study hours:
-
-- **Non-significant coefficient** for SleepHours.
-- **R-squared ≈ 0**, indicating negligible explanatory power.
-
-**Conclusion:**
-- Sleep duration alone does not meaningfully predict study time.
-- Future analyses could include additional lifestyle or environmental factors.
-
----
-
