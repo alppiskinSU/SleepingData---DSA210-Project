@@ -40,6 +40,7 @@ By the end of the study, this project aims to answer the following questions:
 - Does getting more sleep lead to better academic performance?
 - Is there an ideal sleep schedule for increased focus and learning efficiency?
 - How does poor sleep impact productivity and retention of information?
+- Are there any meaningful trends or fluctuations in my personal study performance based on different sleep patterns?
 
 ---
 
