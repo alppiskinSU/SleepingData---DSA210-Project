@@ -101,9 +101,4 @@ if p_value < 0.05:
 else:
     print("There is no statistically significant relationship.")
 
-# 12. Regression Analysis: SleepHours -> StudyHours
-X = sm.add_constant(filled['SleepHours'])
-y = filled['StudyHours']
-model = sm.OLS(y, X).fit()
-print("\nRegression Analysis Summary:")
-print(model.summary())
+
