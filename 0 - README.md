@@ -140,7 +140,7 @@ The time series below highlights trends in sleep and study habits:
 ### 8. Correlation & Hypothesis Testing
 
 **Research Question:**  
-> *Does sleep duration significantly correlate with study duration?*
+*Does sleep duration significantly correlate with study duration?*
 
 To examine this relationship, a **Pearson correlation test** was conducted between the variables **Sleep Duration (SleepHours)** and **Study Duration (StudyHours)**.
 
