@@ -101,4 +101,60 @@ if p_value < 0.05:
 else:
     print("There is no statistically significant relationship.")
 
+# 12. Machine Learning Models
+
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_absolute_error, r2_score
+
+# Model 1: SleepQuality → StudyQuality
+X1 = filled[['SleepQuality']]
+y  = filled['StudyQuality']
+
+model1 = LinearRegression()
+model1.fit(X1, y)
+y_pred1 = model1.predict(X1)
+
+r2_1  = r2_score(y, y_pred1)
+mae_1 = mean_absolute_error(y, y_pred1)
+print(f"Model 1 (SleepQuality → StudyQuality): R² = {r2_1:.3f}, MAE = {mae_1:.3f}")
+
+plt.figure(figsize=(8,6))
+sns.regplot(
+    x='SleepQuality',
+    y='StudyQuality',
+    data=filled,
+    scatter_kws={'s':50},
+    line_kws={'color':'red'}
+)
+plt.title('Model 1: Sleep Quality vs Study Quality')
+plt.xlabel('Sleep Quality (1–10)')
+plt.ylabel('Study Quality (1–10)')
+plt.tight_layout()
+plt.show()
+
+
+# Model 2: SleepHours → StudyQuality
+X2 = filled[['SleepHours']]
+
+model2 = LinearRegression()
+model2.fit(X2, y)
+y_pred2 = model2.predict(X2)
+
+r2_2  = r2_score(y, y_pred2)
+mae_2 = mean_absolute_error(y, y_pred2)
+print(f"Model 2 (SleepHours → StudyQuality): R² = {r2_2:.3f}, MAE = {mae_2:.3f}")
+
+plt.figure(figsize=(8,6))
+sns.regplot(
+    x='SleepHours',
+    y='StudyQuality',
+    data=filled,
+    scatter_kws={'s':50},
+    line_kws={'color':'red'}
+)
+plt.title('Model 2: Sleep Hours vs Study Quality')
+plt.xlabel('Sleep Duration (Hours)')
+plt.ylabel('Study Quality (1–10)')
+plt.tight_layout()
+plt.show()
 
