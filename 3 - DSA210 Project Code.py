@@ -130,7 +130,6 @@ plt.title('Model 1: Sleep Quality vs Study Quality')
 plt.xlabel('Sleep Quality (1–10)')
 plt.ylabel('Study Quality (1–10)')
 plt.tight_layout()
-plt.savefig('images/model1_sleepquality_studyquality.png')
 plt.show()
 
 
@@ -157,6 +156,5 @@ plt.title('Model 2: Sleep Hours vs Study Quality')
 plt.xlabel('Sleep Duration (Hours)')
 plt.ylabel('Study Quality (1–10)')
 plt.tight_layout()
-plt.savefig('images/model2_sleephours_studyquality.png')
 plt.show()
 
