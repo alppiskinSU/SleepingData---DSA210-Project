@@ -163,54 +163,74 @@ The heatmap below visualizes correlations between four key variables: Sleep Dura
 
 ## Machine Learning Models
 
-In this section, two linear regression models were developed to explore whether sleep habits can predict study quality.
+In this section, three regression models were developed to explore how different sleep-related metrics affect study quality.
 
 ---
 
 ### Model 1: Sleep Quality → Study Quality
 
-- **Objective:** To investigate whether self-rated sleep quality predicts self-rated study quality.
-- **Method:** Simple Linear Regression
+- **Objective:** To examine the impact of self-rated sleep quality on study quality.
+- **Method:** Simple Linear Regression  
 - **Features:**  
   - Independent Variable (X): Sleep Quality (scale 1–10)  
   - Dependent Variable (y): Study Quality (scale 1–10)
 - **Results:**  
-  - R²: 0.019  
-  - MAE (Mean Absolute Error): 2.485
-- **Interpretation:** Sleep quality explains only 1.9% of the variation in study quality.
+  - R²: 0.016
+  - MAE: 1.602
+- **Interpretation:** Sleep quality has a very weak relationship with study quality, as indicated by the low R² value. It may not be a reliable predictor on its own.
 
 ![Model 1 - Sleep Quality vs Study Quality](Model%201%20-%20ML.png)
 
-*Figure: Regression result of Sleep Quality vs Study Quality*
+---
+
+### Model 2: Sleep Efficiency → Study Quality
+
+- **Objective:** To test the effectiveness of sleep efficiency (quality/hours) in predicting study quality.
+- **Method:** Simple Linear Regression  
+- **Features:**  
+  - Independent Variable (X): Sleep Efficiency (SleepQuality / SleepHours)  
+  - Dependent Variable (y): Study Quality
+- **Results:**  
+  - R²: 0.006
+  - MAE: 1.615
+- **Interpretation:** Sleep efficiency also showed a negligible predictive power for study quality, suggesting that more complex or additional variables may be needed.
+
+
+![Model 2 - Predict Study Quality](Model%202%20-%20ML.png)
 
 ---
 
-### Model 2: Sleep Hours → Study Quality
+### Model 3: Decision Tree Regressor
 
-- **Objective:** To determine whether sleep duration can predict study quality.
-- **Method:** Simple Linear Regression
+- **Objective:** To model study quality using multiple features and assess feature importance.
+- **Method:** Decision Tree Regression  
 - **Features:**  
-  - Independent Variable (X): Sleep Hours (in hours)  
-  - Dependent Variable (y): Study Quality (scale 1–10)
+  - Sleep Hours  
+  - Sleep Quality  
 - **Results:**  
-  - R²: 0.072  
-  - MAE: 2.356
-- **Interpretation:** Sleep hours explain approximately 7.2% of the variation in study quality.
+  - R²: -0.240  
+  - MAE: 2.375
+- **Feature Importance Results:**  
+  - Sleep Hours: Most impactful  
+  - Sleep Quality: Moderately impactful
 
-![Model 2 - Sleep Hours vs Study Quality](Model%202%20-%20ML.png)
+- **Interpretation:** The Decision Tree model highlights feature importance but showed weak generalization due to dataset size.
 
-*Figure: Regression result of Sleep Hours vs Study Quality*
+![Model 3: Decision Tree](Model%203%20-%20ML.png)  
+![Model 3: Feature Importance](Model%203%20-%20ML2.png)
+
 
 ---
 
 ### Comparison of Models
 
-| Model | R² | MAE |
-|-------|----|-----|
-| Sleep Quality → Study Quality | 0.019 | 2.485 |
-| Sleep Hours → Study Quality   | 0.072 | 2.356 |
+| Model                             | R²     | MAE     |
+|----------------------------------|--------|---------|
+| Sleep Quality → Study Quality    | 0.016  | 1.602   |
+| Sleep Efficiency → Study Quality | 0.006  | 1.615   |
+| Decision Tree (Multi-feature)    | -0.240 | 2.375   |
 
-**Insight:** Neither model demonstrated strong predictive accuracy, although sleep duration performed slightly better.
+**Note:** None of the models achieved strong predictive performance. The R² values are close to zero or even negative, which suggests that the input features may not have strong linear or nonlinear relationships with the target variable (Study Quality). This outcome is likely due to a small dataset and high variability in subjective ratings.
 
 ---
 
@@ -218,26 +238,29 @@ In this section, two linear regression models were developed to explore whether 
 
 ### Limitations
 
-- Small sample size (single individual).
-- Subjective self-reported data.
-- Limited variables analyzed.
-- Linear assumptions may oversimplify.
-- Short-term dataset.
+- Data is collected from a single individual, limiting the generalizability of the findings.
+- Self-reported measures may introduce bias.
+- Small dataset affects the robustness of machine learning models.
+- Decision Tree feature importances may vary with small data.
 
 ### Future Work
 
-- Collect data from multiple participants.
-- Include additional variables (stress, nutrition, etc).
-- Try advanced ML models.
-- Collect long-term data.
-- Use automated tracking tools.
+- Collect larger datasets across multiple participants.
+- Include additional contextual variables (e.g., stress, diet, distractions).
+- Apply more robust models such as Random Forest or KNN with more data.
+- Implement cross-validation to improve model generalization.
+- Automate data collection to reduce self-report bias.
 
 ---
 
 ## Conclusion
 
-This project used two linear regression models to explore the relationship between sleep and study performance. While neither sleep quality nor sleep duration proved to be strong predictors of study quality, the models still provide valuable insights.
+This project explored the potential impact of sleep-related factors on self-rated academic performance. Although the machine learning models yielded low predictive accuracy, several insights were drawn:
 
-Sleep duration had slightly more predictive power than sleep quality, but overall R² values were low, indicating that academic productivity is likely influenced by many other variables beyond sleep alone.
+- **Sleep Quality** and **Sleep Efficiency** exhibited weak positive trends with Study Quality.
+- **Decision Tree analysis** emphasized that Sleep Hours may have slightly more influence than other features, though overall predictability remained low.
+- The limited model performance emphasizes the challenges of working with small, subjective datasets and the complexity of factors influencing study effectiveness.
 
-Despite these limitations, the project demonstrates how basic machine learning methods can be applied to personal data. Future studies with more variables and data can uncover deeper insights into effective studying habits.
+Despite its statistical limitations, this project provided an excellent opportunity to practice data analysis, visualization, hypothesis testing, and machine learning in a real-life context. In future work, larger and more diverse datasets—combined with richer features—could help build models that better reflect the intricate relationship between lifestyle habits and academic productivity.
+
+
