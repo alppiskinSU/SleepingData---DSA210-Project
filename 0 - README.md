@@ -1,6 +1,6 @@
 # SleepingData---DSA210-Project
 
-## Project Overwiev
+## Project Overview
 
 This project explores how sleep duration and quality impact academic performance. Sleep is a critical factor in cognitive function, study time, and study quality. The goal is to analyze whether better sleep habits lead to improved academic success.
 
