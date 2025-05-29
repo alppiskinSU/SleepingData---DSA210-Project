@@ -271,9 +271,9 @@ This project was completed independently by myself. However, OpenAI’s ChatGPT 
 
 - ChatGPT assisted in improving the grammar, sentence structure, and clarity of the README file. All written content ideas,interpretations were originally written by me and checked by ChatGPT.
 
-- Also, guidance was received for using GitHub effectively, including how to upload files, embed images into the README, and structure the repository content in a clear and organized way.
+- Since I didn't know how to use GitHub at first, guidance was received for using GitHub effectively, including how to upload files, embed images into the README, and structure the repository content in a clear and organized way.
 
-- During the preparation of the Jupyter Notebook, ChatGPT provided help with data visualization, interpreting regression model outputs, and writing summary explanations of the results.
+- Also, during the preparation of the Jupyter Notebook, ChatGPT provided help with data visualization, interpreting regression model outputs, and writing summary explanations of the results.
 
 All AI-generated suggestions were reviewed and revised to ensure originality and accuracy.
 
