@@ -263,4 +263,18 @@ This project explored the potential impact of sleep-related factors on self-rate
 
 Despite its statistical limitations, this project provided an excellent opportunity to practice data analysis, visualization, hypothesis testing, and machine learning in a real-life context. In future work, larger and more diverse datasets—combined with richer features—could help build models that better reflect the intricate relationship between lifestyle habits and academic productivity.
 
+---
+
+### Appendix: Use of AI Assistance
+
+This project was completed independently by myself. However, OpenAI’s ChatGPT (GPT-4) was used in the following areas to support the process:
+
+- ChatGPT assisted in improving the grammar, sentence structure, and clarity of the README file. All written content ideas,interpretations were originally written by me and checked by ChatGPT.
+
+- Also, guidance was received for using GitHub effectively, including how to upload files, embed images into the README, and structure the repository content in a clear and organized way.
+
+- During the preparation of the Jupyter Notebook, ChatGPT provided help with data visualization, interpreting regression model outputs, and writing summary explanations of the results.
+
+All AI-generated suggestions were reviewed and revised to ensure originality and accuracy.
+
 
